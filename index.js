@@ -22,9 +22,10 @@ function displayPoem(event) {
 
   axios.get(apiUrl).then(generatePoem);
 
- console.log("Generating poem");
- console.log(`prompt: ${prompt}`);
- console.log(`context: ${context}`);
+  
+  let poemElement = document.querySelector("#poem")
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="blink"> 🚧Generating a Xhosa poem about ${generatorElement.value}</div>`;
 }
 
 let formElement = document.querySelector("form");
