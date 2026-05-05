@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>IsiXhosa AI poem generation</title>
-    <link rel="stylesheet" src="style.css"/>
 </head>
+
 <body>
-    <header></header>
+    <div class="container">
+    <header>
+        <h1> 
+            AI poem generation
+        </h1>
+    </header>
     <main>
-        <h1> AI poem generation</h1>
+        
         <form>
-            <input type="text" required autofocus autocomplete="off"/>
-            <input type="submit"/>
+            <input type="text" placeholder="enter a word to generate a poem in isiXhosa" autofocus autocomplete="off" class="text-builder"/>
+            <input type="submit" class="submit-form"/>
         </form>
         <br />
         <br/>
-        <div>
+        <div class="poem">
             Alingebanjwa mntu
+            <br />
             Lingejikwa kaloku
-            Ngucothoza ukuthi Chu
-            Ngufumtshakazi ukuceng'umhlaba
         </div>
         <br />
     </main>
     <footer>
         Coded by <a href="https://github.com/QhamaniMagasana">Qhamani Magasana</a> open sourced on <a href="https://github.com/QhamaniMagasana?tab=repositories">Github</a> hosted on <a href="https://app.netlify.com/teams/qhamanimagasana/projects">Netlify.</a>
     </footer>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
